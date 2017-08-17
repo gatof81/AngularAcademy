@@ -8,7 +8,7 @@ import {
   ViewChild
 } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { card } from '../models/card';
+import { Card } from '../models/card';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/filter';
 import {dummyValidator} from '../shared/dummy.validator';
@@ -22,7 +22,7 @@ import {dummyValidator} from '../shared/dummy.validator';
     </div>
   </div>`,
   styles: [
-    '.card {margin-bottom: 1.5rem;}'
+    '.Card {margin-bottom: 1.5rem;}'
   ]
 })
 export class NewCardInputComponent implements OnInit {
@@ -31,7 +31,7 @@ export class NewCardInputComponent implements OnInit {
 
   newCardForm: FormGroup;
 
-  public newCard: card = {text: ''};
+  public newCard: Card = {text: ''};
 
   @HostListener('keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {

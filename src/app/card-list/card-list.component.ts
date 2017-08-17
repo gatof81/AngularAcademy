@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {filter} from 'lodash';
-import {card} from '../models/card'
+import {Card} from '../models/card';
 
 @Component({
   selector: 'app-card-list',
@@ -35,7 +35,7 @@ export class CardListComponent implements OnInit {
   }
 
   getPineed(cards, pinned = true) {
-    return filter(cards, (card: card)=> pinned ? card.pinned === true : card.pinned !== true)
+    return filter(cards, (card: Card) => pinned ? card.pinned === true : card.pinned !== true);
   }
 
 }

@@ -14,18 +14,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public cards: Array<any> = [
-    {text:'card1'},
-    {text:'card2'},
-    {text:'card3'},
-    {text:'card4'},
-    {text:'card5'},
-    {text:'card6'},
-    {text:'card7'},
-    {text:'card8'},
-    {text:'card9'}
-  ]
+    {text: 'card1'},
+    {text: 'card2'},
+    {text: 'card3'},
+    {text: 'card4'},
+    {text: 'card5'},
+    {text: 'card6'},
+    {text: 'card7'},
+    {text: 'card8'},
+    {text: 'card9'}
+  ];
 
   addCard(card_text: string) {
-    this.cards.push({text:card_text})
+    this.cards.push({text: card_text});
   }
 }

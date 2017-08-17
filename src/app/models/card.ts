@@ -1,4 +1,4 @@
-export interface card {
-  text: string,
-  pinned?: boolean
+export interface Card {
+  text: string;
+  pinned?: boolean;
 }
